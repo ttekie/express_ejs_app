@@ -15,8 +15,9 @@ const messages_arr = [
 ];
 
 /* Delete the last item. */
-router.get('/delete', function(req, res, next) {
-  req.pop();
+router.get('/delete', function(req, res, next)
+  console.log('DELETE END POINT WORKS');
+  messages_arr.pop();
   res.render('index', { messages: messages_arr, title: 'MINI MESSAGE BOARD!', header: 'New message page' });
 });
 
