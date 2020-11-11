@@ -6,14 +6,18 @@
   </head>
   <body>
     <div class="container">
-    <h1><%= header %></h1>
-    <p>Welcome to <%= title %></p>
-    <ul>
+      <h1><%= header %></h1>
+      <p>Welcome to <%= title %></p>
+      <ul>
       <% for(let i = 0; i < messages.length; i++){ %>
         <li> <%= messages[i].text %> </li>
       <% } %>
-    </ul>
-    <button type="button" name="button" method="get">Delete</button>
-  </div>
+      </ul>
+      <div class="">
+        <form class="form" action="/delete" method="get">
+          <button type="submit" name="button"></button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

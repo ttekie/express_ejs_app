@@ -130,4 +130,4 @@ function onListening() {
   console.log('Listening on ' + bind);
 }
 
-module.exports = app;
+module.exports = server;
