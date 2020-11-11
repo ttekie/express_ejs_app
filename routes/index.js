@@ -18,7 +18,6 @@ const messages_arr = [
 router.get('/delete', function(req, res, next) {
   req.pop();
   res.render('index', { messages: messages_arr, title: 'MINI MESSAGE BOARD!', header: 'New message page' });
-
 });
 
 /* GET home page. */
@@ -39,7 +38,7 @@ router.post('/new', function(req, res, next) {
   console.log("You have submmited the message. Here is the content: ");
   console.log("Body of message: " + text);
   console.log("User of message: " + user);
-  
+
   /* Create a message object and add a message object to the messages array */
   let new_message = {
     text: text,
