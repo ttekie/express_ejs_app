@@ -3,7 +3,7 @@ var router = express.Router();
 
 const messages_arr = [
    {
-     text: "Hi there!",
+     text: "Hola there!",
      user: "Amando",
      added: new Date()
    },
